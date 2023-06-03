@@ -6,13 +6,14 @@
   font-display: swap;
 }
 li,
-td {
+th,
+td,
+code {
   font-family: 'PT Mono', sans-serif;
-  color: #fff;
+  color: #000;
 }
 th {
   font-family: 'Actay Wide', sans-serif;
-  color: #ff0056;
   line-height: 1;
 }
 td:first-child {
@@ -25,9 +26,14 @@ td {
 td:not(:first-child) {
   padding: 0 !important;
 }
+code:before,
+li:before {
+  color: #000 !important;
+  opacity: 0.6 !important;
+}
 blockquote {
   font-family: 'PT Mono', sans-serif;
-  color: #141414;
+  color: #1fff78;
   font-weight: 100;
   letter-spacing: -1px;
 }
@@ -52,17 +58,17 @@ blockquote:before {
   visibility: hidden;
 }
 .slide::after {
-  background: none;
-  height: 75px;
-  min-width: 55px;
-  color: #fff;
+  height: 65px;
+  width: 65px;
+  color: #efefef;
   font-family: 'Actay Wide', sans-serif;
-  font-size: 40px;
-  padding: 0 7px;
-  margin-left: 30px;
+  font-size: 31px;
+  margin: 10px 76px;
+  line-height: 40px;
+  border-radius: 50%;
 }
 .slide.rbn::after {
-  background: #ff0056;
+  background: #000;
 }
 .slide::before {
   position: absolute;
@@ -135,7 +141,7 @@ blockquote:before {
   font-size: 90px;
 }
 .slide .shout.smaller a {
-  color: #fff;
+  color: #000;
 }
 .slide.menu-slide h2 {
   font-size: 120px;
@@ -143,7 +149,7 @@ blockquote:before {
   padding: 0 30px;
 }
 .slide.menu-slide ul {
-  color: #fff;
+  color: #000;
 }
 .slide.menu-slide ul > li {
   font-size: 120px;
@@ -155,7 +161,7 @@ blockquote:before {
   opacity: 0;
 }
 .slide.menu-slide .selected-item {
-  background-color: #141414;
+  background-color: #1fff78;
   display: inline-block;
 }
 .slide.menu-slide .transparent {
@@ -163,21 +169,24 @@ blockquote:before {
 }
 .slide.label-header h2 {
   display: inline-block;
-  background-color: #ff0056;
+  background: rgba(31,255,120,0.7);
   padding: 12px;
   font-family: 'Actay Wide', sans-serif;
   font-size: 35px;
-  color: #fff;
+  color: #000;
 }
 .slide.label-header h2.shout {
   margin-left: 0;
   padding: 20px 0;
   font-size: 52px;
+  color: #000;
   border: none;
+  background: none;
 }
 .slide.label-header.bg h2 {
   background: none;
-  padding: 15px;
+  padding: 0;
+  color: #000;
 }
 .slide.capture h2.shout {
   font-size: 64px;
@@ -211,17 +220,16 @@ blockquote:before {
 blockquote {
   font-size: 20px;
   line-height: 1.4;
-  color: #fff;
+  color: #000;
 }
 figcaption {
-  color: #fff;
   opacity: 0.5;
   position: relative;
   line-height: 1.6;
-  margin-top: 20px !important;
+  margin-top: 40px !important;
 }
 .label {
-  background-color: #141414;
+  background-color: #1fff78;
   color: #fff;
   padding: 0 10px;
   display: inline-block;
